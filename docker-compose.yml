@@ -13,7 +13,7 @@ services:
       WORDPRESS_DB_PASSWORD: password
       WORDPRESS_DB_NAME: wordpress
     volumes:
-      - ./wordpress:/var/www/html  # מיפוי לקבצים הקיימים
+      - ./wordpress:/var/www/html 
     depends_on:
       - db
 
@@ -30,4 +30,4 @@ services:
       - db_data:/var/lib/mysql
 
 volumes:
-  db_data:
+  db_data: 
