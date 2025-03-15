@@ -2,7 +2,7 @@
 
 <main class="container mx-auto px-4 py-10">
     <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-        <section class="md:col-span-2">
+        <section class="md:col-span-2  min-h-[calc(90vh-290px)]">
             <?php
             if (have_posts()) {
                 while (have_posts()) {
@@ -25,11 +25,6 @@
             }
             ?>
         </section>
-
-        <!-- Sidebar -->
-        <aside class="bg-gray-100 p-6 rounded-lg">
-            <?php get_sidebar(); ?>
-        </aside>
     </div>
 </main>
 

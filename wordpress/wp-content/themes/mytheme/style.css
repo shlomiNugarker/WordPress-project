@@ -625,6 +625,54 @@ video {
   display: grid;
 }
 
+.min-h-\[calc\(100vh-4rem\)\] {
+  min-height: calc(100vh - 4rem);
+}
+
+.min-h-\[calc\(100vh-140px\)\] {
+  min-height: calc(100vh - 140px);
+}
+
+.min-h-\[calc\(90vh-140px\)\] {
+  min-height: calc(90vh - 140px);
+}
+
+.min-h-\[calc\(90vh\)\] {
+  min-height: calc(90vh);
+}
+
+.min-h-\[calc\(50vh\)\] {
+  min-height: calc(50vh);
+}
+
+.min-h-\[calc\(50vh-\)\] {
+  min-height: calc(50vh - );
+}
+
+.min-h-\[calc\(50vh-2\)\] {
+  min-height: calc(50vh - 2);
+}
+
+.min-h-\[calc\(50vh-220\)\] {
+  min-height: calc(50vh - 220);
+}
+
+.min-h-\[calc\(50vh-220px\)\] {
+  min-height: calc(50vh - 220px);
+}
+
+.min-h-\[calc\(90vh-240px\)\] {
+  min-height: calc(90vh - 240px);
+}
+
+.min-h-\[calc\(90vh-260px\)\] {
+  min-height: calc(90vh - 260px);
+}
+
+.min-h-\[calc\(90vh-290px\)\] {
+  min-height: calc(90vh - 290px);
+}
+
 .grid-cols-1 {
   grid-template-columns: repeat(1, minmax(0, 1fr));
 }
