@@ -34,7 +34,7 @@
         </h1>
 
         <!-- Navigation Menu -->
-        <nav class="md:flex space-x-6">
+        <nav class="hidden md:flex space-x-6">
             <?php
             wp_nav_menu(array(
                 'theme_location' => 'primary',
@@ -45,10 +45,7 @@
             ?>
         </nav>
 
-        <!-- Dark Mode Toggle -->
-        <button id="theme-toggle" class="p-2 rounded bg-gray-300 dark:bg-gray-700 hover:bg-gray-400 dark:hover:bg-gray-600 transition duration-300">
-            🌙 / ☀️
-        </button>
+  
     </div>
 </header>
 
