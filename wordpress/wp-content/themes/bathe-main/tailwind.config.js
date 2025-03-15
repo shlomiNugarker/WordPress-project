@@ -2,6 +2,7 @@
  * @type {import('tailwindcss/tailwind-config').TailwindConfig }
  */
 module.exports = {
+  mode: 'jit',
   future: {
     hoverOnlyWhenSupported: true,
   },

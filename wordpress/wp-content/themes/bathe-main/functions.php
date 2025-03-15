@@ -124,3 +124,13 @@ add_action(
 		}
 	}
 );
+
+
+function theme_menu() {
+    wp_nav_menu(array(
+        'theme_location' => 'primary',
+        'container' => false,
+        'menu_class' => 'flex space-x-6 text-lg font-medium text-muted-foreground dark:text-secondary-foreground',
+        'fallback_cb' => false
+    ));
+}
