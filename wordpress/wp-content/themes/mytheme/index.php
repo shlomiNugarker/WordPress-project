@@ -9,16 +9,24 @@
                     the_post();
                     echo '<article class="bg-white shadow-md rounded-lg p-6">';
                     echo '<h2 class="text-2xl font-bold text-blue-600"><a href="' . get_permalink() . '">' . get_the_title() . '</a></h2>';
-                    echo '<p class="text-gray-600">' . get_the_excerpt() . '</p>';
-                    echo '<a href="' . get_permalink() . '" class="block mt-4 text-blue-500 font-semibold hover:underline">קרא עוד →</a>';
+
+                    // Show full content for single post pages, but only excerpts on the blog page
+                    if (is_singular()) {
+                        echo '<div class="text-gray-600">' . get_the_content() . '</div>';
+                    } else {
+                        echo '<p class="text-gray-600">' . get_the_excerpt() . '</p>';
+                        echo '<a href="' . get_permalink() . '" class="block mt-4 text-blue-500 font-semibold hover:underline">Read More →</a>';
+                    }
+
                     echo '</article>';
                 }
             } else {
-                echo '<p>אין פוסטים להצגה.</p>';
+                echo '<p class="text-gray-600">No posts available.</p>';
             }
             ?>
         </section>
 
+        <!-- Sidebar -->
         <aside class="bg-gray-100 p-6 rounded-lg">
             <?php get_sidebar(); ?>
         </aside>

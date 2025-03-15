@@ -17,10 +17,10 @@
 <nav class="bg-blue-600 p-4 shadow-md">
     <?php
     wp_nav_menu(array(
-        'theme_location' => 'primary', // מחפש תפריט תחת "Primary Menu"
-        'container' => false, // מסיר עטיפת <div> מיותרת
-        'menu_class' => 'flex justify-center space-x-6 text-white', // מוסיף עיצוב Tailwind
-        'fallback_cb' => false // מבטל תפריט ברירת מחדל אם אין תפריט מוגדר
+        'theme_location' => 'primary', 
+        'container' => false, 
+        'menu_class' => 'flex justify-center space-x-6 text-white', 
+        'fallback_cb' => false 
     ));
     ?>
 </nav>
